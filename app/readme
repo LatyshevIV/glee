@@ -1,0 +1,19 @@
+чеклист https://www.notion.so/Junior-GLEE-0c7f0cda212d49299e90d95f5abc6761
+
+git init инциализировать репозиторий
+git status статус проекта информация о проекте 
+git add . добавить обьекты
+git branch -M main перейти ина главную ветку
+git remote add origin https://github.com/LatyshevIV/glee.git зайти в свой репозиторий
+git push -u origin main залить в репозиторий ('main' ветка)
+git branch dev создать новую ветку ('dev' название ветки)
+git branch список веток
+git checkout dev перейти на ветку dev
+git commit -m 'содержание коммита' сделать комит
+git commit -am 'содержание коммита' (если новых файлов не было)
+
+cntr R линейка
+cntr shift c копировать содержимое области
+cntrl n новое окно
+alt click показать выбранный слой
+cntrl shift alt s сохранить для веб

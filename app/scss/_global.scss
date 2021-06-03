@@ -1,0 +1,196 @@
+body {
+    font-size: 16px;
+    line-height: 1.3;
+    color: $text;
+    background-color: #fff;
+    @extend %DMSans-400;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container--big {
+    max-width: 1800px;
+}
+
+.logo {
+    display: block;
+}
+
+.logo img {
+    height: 40px;
+    width: 155px;
+    object-fit: contain;
+}
+
+.section-padding {
+    padding: 75px 0 120px;
+}
+
+.title {
+    text-transform: uppercase;
+    @extend %Rubik-500;
+    font-size: 72px;
+    color: $title-color;
+}
+
+.subtitle {
+    @extend %DMSans-700;
+    font-size: 36px;
+    color: $subtitle;
+}
+
+.btn {
+    background-color: $button-color;
+    min-width: 100px;
+    text-align: center;
+    padding: 15px;
+    border: none;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.round__btn {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.filter {
+    display: flex;
+
+    &__item {
+        margin-right: 30px;
+    }
+
+    &__item {
+        margin-right: 0;
+    }
+
+    &__btn {
+        background-color: transparent;
+        border: none;
+        color: $gray;
+        @extend %DMSans-700;
+        font-size: 16px;
+    }
+}
+
+.products-nav {
+    display: flex;
+
+    &__item {
+        margin-right: 15px;
+    }
+
+    &__item:last-child {
+        margin-right: 0;
+    }
+
+    &__btn {
+        background-color: #fefefe;
+    }
+}
+
+.btn-efect {
+    outline-color: transparent;
+    transition: background-color 0.5s, box-shadow 0.1s;
+}
+
+.btn-efect path {
+    transition: fill 0.2s;
+}
+
+.btn-efect:hover,
+.btn-efect:focus,
+.btn-efect:active,
+.btn-efect:hover path,
+.btn-efect:focus path,
+.btn-efect:active path {
+    background-color: $button-color;
+    fill: #fff;
+}
+
+.btn-efect:active {
+    box-shadow: 0 0 15px 0 $button-color inset, 0 0 15px 4px $button-color;
+}
+
+.bigbtn-efect {
+    outline-color: transparent;
+    transition: background-color 0.5s, box-shadow 0.1s, color 0.5s;
+}
+
+.bigbtn-efect:hover,
+.bigbtn-efect:focus {
+    background-color: $active-btn;
+    color: $title-color;
+}
+
+.bigbtn-efect:active {
+    box-shadow: 0 0 15px 0 $active-btn inset, 0 0 15px 4px $active-btn;
+}
+
+
+
+.text-efect {
+    outline-color: transparent;
+    transition: color 0.5s, translate 0.1s;
+}
+
+.text-efect:hover,
+.text-efect:focus {
+    color: $button-color;
+}
+
+.text-efect:active {
+    transform: translateY(-3px);
+}
+
+.mixitup-control-active {
+    color: $subtitle !important;
+}
+
+.hide-efect {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.show-efect:hover .hide-efect {
+    opacity: 1;
+}
+
+.btn-efect:focus .hide-efect,
+.btn-efect:active .hide-efect {
+    opacity: 1;
+}
+
+.input-efect {
+    outline-color: transparent;
+    transition: background-color 0.5s, box-shadow 0.1s, color 0.5s;
+}
+
+.input-efect:hover {
+    box-shadow: 0 0 15px 0 $inputbg inset, 0 0 15px 4px $inputbg;
+}
