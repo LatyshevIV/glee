@@ -27,7 +27,7 @@ body {
 }
 
 .section-padding {
-    padding: 75px 0 120px;
+    padding: 60px 0 120px;
 }
 
 .title {
@@ -82,10 +82,10 @@ body {
     display: flex;
 
     &__item {
-        margin-right: 30px;
+        margin-right: 20px;
     }
 
-    &__item {
+    &__item:last-child {
         margin-right: 0;
     }
 

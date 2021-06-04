@@ -11,6 +11,7 @@ git branch список веток
 git checkout dev перейти на ветку dev
 git commit -m 'содержание коммита' сделать комит
 git commit -am 'содержание коммита' (если новых файлов не было)
+git push origin dev
 
 cntr R линейка
 cntr shift c копировать содержимое области
